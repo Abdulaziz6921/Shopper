@@ -1,0 +1,662 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    // font-family: sans-serif
+    font-family: sans-serif
+
+    // Header part 
+    .header
+        width: 100%
+        height: 150px
+        display: flex
+        justify-content: space-between
+        // border: 2px solid red
+        @media (max-width:700px)
+            width: 100%
+            height: 100px
+
+        .logo
+            width: 30%
+            height: 100%
+            // border: 2px solid blue
+            padding-top: 50px
+            padding-left: 55px
+            font-size: 40px
+            @media (max-width:700px)
+                width: 20%
+                padding-top: 8%
+                padding-left: 1%
+                font-size: 25px
+
+            span
+                color: #10B981
+
+        .loginbtn
+            width: 70%
+            height: 100%
+            // border: 2px solid black
+            display: flex
+            justify-content: space-between
+            align-items: center
+            @media (max-width:700px)
+                width: 77%
+
+            input
+                position: relative
+                width: 31%
+                height: 62px
+                border-radius: 10px
+                border: none
+                text-indent: 25px
+                font-size: 18px
+                // border: 2px solid red
+                box-shadow: 0px 15px 30px rgba(46, 131, 158, 0.2)
+                @media (max-width:700px)
+                    width: 70%
+                    height: 50px
+                    text-indent: 10px
+                    margin-left: 9%
+            .btn
+                width: 230px
+                height: 60px
+                border-radius: 60px
+                border: 2px solid #10B981
+                background: transparent
+                font-size: 18px
+                @media (max-width:700px)
+                    display: none
+
+            i.fa-lock
+                margin-right: 15px
+                color: #10B981
+
+            .btn2
+                background: #10B981
+                color: white
+                margin-right: 40px
+                @media (max-width:700px)
+                    display: none
+
+            i.fa-user
+                margin-right: 15px
+
+            .btn3
+                display: none
+                width: 40px
+                height: 45px
+                border-radius: 3px
+                background: #10B981
+                color: white
+                @media (max-width:700px)
+                    display: block
+
+    //  Nav part 
+    .nav
+        width: 100%
+        height: 80px
+        background: #10B981
+        // border: 2px solid blue
+        display: flex
+        justify-content: center
+        @media (max-width:700px)
+            display: none
+
+        ul
+            display: flex
+            align-items: center
+            li
+                list-style: none
+
+                a
+                    text-decoration: none
+                    margin-right: 100px
+                    color: white
+                    font-size: 20px
+
+    //  Main part
+    main
+        width: 100%
+        height: 650px
+        // border: 3px solid red
+        display: flex
+        position: relative
+        @media (max-width:700px)
+            flex-direction: column
+            height: 1500px
+
+        .info
+            width: 55%
+            position: relative
+            height: 100%
+            // border: 3px solid red
+            text-align: left
+            padding: 120px 100px
+            @media (max-width:700px)
+                width: 100%
+                height: 50%
+                padding: 30px 10px
+
+            h1
+                font-size: 64px
+                @media (max-width:700px)
+                    font-size: 45px
+            p
+                margin-top: 40px
+                font-size: 21px
+                @media (max-width:700px)
+                    font-size: 16px
+            button
+                width: 263px
+                height: 70px
+                background: #10B981
+                font-size: 21px
+                margin-top: 50px
+                border: none
+                border-radius: 10px
+                color: white
+
+            img
+                position: absolute
+                &:hover
+                    border: 2px solid dodgerblue
+                    border-radius: 50%
+
+            .img1
+                left: 11%
+                bottom: 1%
+                &:hover
+                    z-index: 1
+                @media (max-width:700px)
+                    left: 2%
+
+            .img2
+                left: 15%
+                bottom: 1%
+                &:hover
+                    z-index: 1
+                @media (max-width:700px)
+                    left: 8%
+            .img3
+                left: 19%
+                bottom: 1%
+                &:hover
+                    z-index: 1
+                @media (max-width:700px)
+                    left: 15%
+            .img4
+                left: 23%
+                bottom: 1%
+                &:hover
+                    z-index: 1
+                @media (max-width:700px)
+                    left: 22%
+            .reviewnumber
+                position: absolute
+                left: 33%
+                bottom: 1%
+                font-size: 18px
+                @media (max-width:700px)
+                    left: 40%
+                    bottom: 2%
+                    font-size: 16px
+                span
+                    display: block
+                    padding-top: 5px
+
+        .pctr
+            width: 45%
+            height: 100%
+            // border: 3px solid green
+            position: relative
+            @media (max-width:700px)
+                width: 100%
+
+            .Star1
+                position: absolute
+                top: 10%
+                left: 10%
+            .Star2
+                position: absolute
+                bottom: 10%
+                right: 10%
+
+            .img5
+                position: absolute
+                bottom: 16%
+                border-radius: 50%
+                // border: 2px solid black
+                outline: 2px solid dodgerblue
+                outline-offset: 5px
+                &:hover
+                    border: 10px solid dodgerblue
+                    outline-offset: 0px
+                    border: 2px solid black
+                    outline: 8px solid dodgerblue
+            p
+                position: absolute
+                bottom: 11%
+                font-size: 21px
+                font-weight: 500
+            .right
+                width: 272px
+                height: 477px
+                background: #ECFEF4
+                border-radius: 136px
+                display: flex
+                justify-content: center
+                align-items: center
+                position: absolute
+                top: 0
+                right: 0
+                bottom: 0
+                left: 0
+                margin: auto
+                p
+                    font-size: 31px
+                    font-weight: bold
+                    position: absolute
+                    bottom: 5%
+
+                .img6
+                    width: 280px
+                    height: 299px
+
+    // Airpod part
+    .airpod
+        width: 100%
+        height: 500px
+        // border: 5px solid black
+        background: #845EC2
+        display: flex
+        @media (max-width:700px)
+            flex-direction: column-reverse
+            height: 850px
+
+        .left
+            width: 52%
+            height: 100%
+            position: relative
+            // border: 2px solid red
+            @media (max-width:700px)
+                width: 100%
+                height: 40%
+            h1
+                font-size: 50px
+                font-family: sans-serif
+                font-weight: 600
+                padding: 70px 30px
+                color: transparent
+                -webkit-text-stroke: 1px white
+                position: relative
+                @media (max-width:700px)
+                    font-size: 30px
+
+            .imga
+                width: 150px
+                height: 280px
+                // border: 2px solid red
+                border-radius: 50px
+                position: absolute
+                top: 35%
+                left: 10%
+                transition: top 1s
+                @media (max-width:700px)
+                    width: 28%
+                    height: 200px
+                    left: 4%
+                    top: 40%
+
+                &:hover
+                    top: 80px
+                    transition: top 3s
+
+            .imgb
+                width: 150px
+                height: 280px
+                // border-radius: 50px
+                position: absolute
+                top: 35%
+                left: 33%
+                transition: top 1s
+                @media (max-width:700px)
+                    width: 28%
+                    height: 200px
+                    left: 0
+                    right: 0
+                    margin: 0 auto
+                    top: 40%
+                &:hover
+                    top: 80px
+                    transition: top 3s
+
+            p.price2
+                position: absolute
+                color: white
+                font-size: 30px
+                bottom: 0px
+                left: 235px
+            .imgc
+                width: 150px
+                height: 280px
+                // border-radius: 50px
+                position: absolute
+                top: 35%
+                right: 24%
+                transition: top 1s
+                @media (max-width:700px)
+                    width: 28%
+                    height: 200px
+                    right: 4%
+                    top: 40%
+                &:hover
+                    top: 80px
+                    transition: top 3s
+
+            .imgd
+                width: 220px
+                height: 350px
+                border-radius: 110px
+                position: absolute
+                bottom: 7%
+                left: 15%
+                transition: bottom 1s
+                @media (max-width:700px)
+                    width: 40%
+                    height: 300px
+                    left: 5%
+                &:hover
+                    bottom: 20%
+                    transition: bottom 2s
+
+            .imge
+                width: 220px
+                height: 350px
+                border-radius: 110px
+                position: absolute
+                bottom: 7%
+                right: 20%
+                transition: bottom 1s
+                @media (max-width:700px)
+                    width: 40%
+                    height: 300px
+                    right: 5%
+                &:hover
+                    bottom: 20%
+                    transition: bottom 2s
+
+        .right
+            width: 48%
+            height: 100%
+            // border: 2px solid green
+            color: #fff
+            text-align: left
+            padding: 30px
+            @media (max-width:700px)
+                width: 100%
+                height: 60%
+            h1
+                font-size: 51px
+                margin-top: 80px
+                text-align: left
+                @media (max-width:700px)
+                    font-size: 40px
+                    margin-top: 30px
+
+            p
+                font-size: 21px
+                margin-top: 20px
+                margin-bottom: 20px
+
+            ul
+                display: flex
+                margin-top: 40px
+                li
+                    width: 40px
+                    height: 40px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    margin-right: 10px
+                    border-radius: 50%
+                    background-color: yellow
+                    outline: 1px solid rgb(209, 26, 26)
+                    // outline-offset: 2px
+                    list-style: none
+            button
+                width: 40%
+                height: 60px
+                border-radius: 10px
+                border: none
+                background: #10B981
+                font-size: 21px
+                font-family: sans-serif
+                color: white
+                margin-top: 40px
+
+    .section
+
+        h1
+            font-size: 44px
+            margin: 70px 0 50px 0
+            text-align: center
+
+        .navbtn
+            display: flex
+            justify-content: center
+            align-items: center
+
+            button
+                width: 177px
+                height: 91px
+                border-radius: 80%
+                font-size: 26px
+                border: none
+                color: #fff
+                background: #10B981
+
+            .btn2
+                background: transparent
+                color: #000
+                font-weight: 600
+                margin-left: 30px
+
+        .product
+            width: 100%
+            height: 600px
+            // border: 2px solid green
+            margin-top: 50px
+            display: grid
+            grid-template-columns: repeat(3, 361px)
+            justify-content: space-evenly
+            align-items: center
+            @media (max-width:700px)
+                height: 1600px
+                display: grid
+                grid-template-columns: repeat(1, 361px)
+
+            .box
+                width: 361px
+                height: 500px
+                // border: 1px solid red
+                border-radius: 15px
+                background: #ECFEF4
+                display: flex
+                justify-content: flex-end
+                align-items: center
+                flex-direction: column
+
+            .infobar
+
+                width: 319px
+                height: 164px
+                background: white
+                border: none
+                border-radius: 15px
+                padding: 50px
+                font-size: 21px
+                font-weight: bold
+                margin-bottom: 15px
+
+                img
+                    margin-top: 15px
+
+                span
+                    font-size: 11px
+                    font-weight: normal
+
+            .btns
+                height: 70px
+                width: 361px
+                border-radius: 10px
+                border: none
+                background: #10B981
+                font-size: 21px
+                font-family: sans-serif
+                color: white
+
+    // Footer part 
+
+    .footer
+        .top
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            // border: 2px solid red
+            @media (max-width:700px)
+                flex-direction: column
+                justify-content: center
+
+            p
+                margin: 100px 0px 30px 40px
+                @media (max-width:700px)
+                    margin: 50px 0 0 0
+
+            button
+                width: 120px
+                height: 35px
+                border: none
+                color: #fff
+                background: #10B981
+                margin: 100px 195px 30px 60px
+                @media (max-width:700px)
+                    margin: 50px 0
+
+        hr
+            width: 75%
+            margin: 0 auto
+            height: 0
+            border: 0
+            border-top: 1px solid rgb(226, 215, 215)
+
+        .footermain
+            display: flex
+            width: 75%
+            height: 200px
+            // border: 4px solid red
+            margin: 50px 0 0 140px
+            @media (max-width:700px)
+                width: 90%
+                height: 450px
+                margin: 50px auto
+                flex-direction: column
+
+            .left
+                width: 35%
+                height: 100%
+                // border: 2px solid blue
+                @media (max-width:700px)
+                    width: 100%
+                    height: 40%
+
+                p
+                    text-align: left
+                    font-size: 21px
+                    font-weight: bold
+                    @media (max-width:700px)
+                        text-align: center
+
+                input
+                    width: 100%
+                    height: 60px
+                    border-radius: 8px
+                    padding: 10px 0 30px 10px
+                    font-size: 21px
+                    border: none
+                    border-bottom: 1px solid rgb(216, 201, 201)
+                    margin-top: 40px
+
+            .right
+
+                width: 65%
+                height: 100%
+                display: flex
+                justify-content: space-evenly
+                // border: 2px solid blue
+                @media (max-width:700px)
+                    width: 100%
+                    height: 60%
+                    margin: 50px 0
+
+                ul
+                    display: flex
+                    flex-direction: column
+
+                    li
+                        list-style: none
+                        margin-bottom: 20px
+                        a
+                            text-decoration: none
+                            color: black
+                            font-size: 15px
+                            font-weight: bold
+                            &:hover
+                                color: #10B981
+        .bottom
+            display: flex
+            width: 75%
+            height: 40px
+            // border: 4px solid red
+            margin: 50px 0 0 140px
+            align-items: center
+            @media (max-width:700px)
+                flex-direction: column-reverse
+                margin: 50px auto 10px auto
+                height: 80px
+                width: 90%
+
+            .left
+                width: 50%
+                height: 100%
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                // border: 2px solid red
+                @media (max-width:700px)
+                    width: 100%
+                    height: 50%
+                    justify-content: center
+
+                p
+                    font-weight: bold
+                    margin-right: 40px
+                    &:hover
+                        color: #10B981
+
+            .right
+                width: 50%
+                height: 100%
+                display: flex
+                justify-content: flex-end
+                align-items: center
+                // border: 2px solid red
+                @media (max-width:700px)
+                    width: 100%
+                    height: 50%
+                    justify-content: center
+
+                i
+                    font-size: 28px
+                    margin-right: 30px
+                    &:hover
+                        color: #10B981
